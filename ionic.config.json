@@ -1,0 +1,7 @@
+{
+  "name": "CityOnBikeProject",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

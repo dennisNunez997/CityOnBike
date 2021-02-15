@@ -1,0 +1,56 @@
+ion-menu{
+    --ion-background-color: var(--ion-color-success);
+}
+
+ion-toolbar{
+    --background: var(--ion-color-success);
+}
+
+ion-item {
+    color:"success";
+}
+
+.card{
+    display: grid;
+    height: 150px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    background-image: url("../../../assets/images/background.png")
+
+}
+
+/*
+.image1, .text1{
+    border: red 1px solid;
+}
+
+.image2, .text2{
+    border: blue 1px solid;
+}
+*/
+.card .image1{
+    grid-row: 1 / span 2;
+}
+
+img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    margin: 20px;
+}
+
+#nombre{
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 22px;  
+    color: whitesmoke;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+#email{
+    font-family: 'Nunito Sans', sans-serif;
+    color: whitesmoke;
+    font-size: 13px;
+    padding-top: 20px;
+}

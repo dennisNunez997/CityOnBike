@@ -1,0 +1,54 @@
+ion-content{
+    --background: url("../../../assets/images/background-vertical.png") 0 0/100% 100% no-repeat;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+ion-slides{
+    margin-top: 10%;
+    background-color: white;
+    height: 90%;
+    max-width: 90%;    
+    border-radius: 10px;
+}
+
+ion-slide{
+    border-radius: 20%;
+}
+.swiper-slide{
+    display: block;
+    margin-bottom: 64px;
+    background-color: white;
+}
+
+ion-slide > h1, h2{
+    margin: 0 0 0 0;
+    color: var(--ion-color-primary);
+    margin-top: 3%;
+
+}
+
+ion-slide > p {
+    font-size: 22px;
+    color: black;
+    padding: 1em 1em 1em 1em;
+}
+
+ion-slide > ion-icon{
+    color: var(--ion-color-success);
+    font-size: 50px;
+}
+
+ion-slide > ion-icon[name="close"]{
+    float: right;
+    color: var(--ion-color-success);
+    font-size: 40px;
+}
+
+ion-slide > img{
+    max-height: 40%;
+    max-width: 40%;
+    margin-left: 15%;
+    margin-top: 10%;
+
+}
+

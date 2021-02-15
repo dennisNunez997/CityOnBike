@@ -1,0 +1,60 @@
+<ion-split-pane contentId="content">
+  <ion-menu contentId="content" side="start">    
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button (click)="closeMenu()">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <div class="card">
+        <div class="image1">
+          <img src="{{imagen}}">
+        </div>
+        <div class="image2">
+          <p id="nombre">{{nombre}}</p>
+        </div>
+        <div class="text1">
+          <p id="email">{{email}}</p>
+        </div>        
+        <div class="text2"></div>
+    </div>
+    <ion-content>
+      <ion-list>
+        <ion-item color="success" (click)="goToTrackeo()">
+          <ion-icon name="home-outline" slot="start"></ion-icon>Inicio
+        </ion-item>
+        
+        <ion-item color="success" (click)="goToProfile()">
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <p style="font-family: 'Nunito Sans', sans-serif;">Mi Perfil</p>
+        </ion-item>
+
+        <ion-item color="success" (click)="myRoutes()">
+          <ion-icon name="analytics-outline" slot="start"></ion-icon>
+          <p style="font-family: 'Nunito Sans', sans-serif;">Mis Rutas</p>
+        </ion-item>
+
+        <ion-item color="success" (click)="goToBiciRutas()">
+          <ion-icon name="bicycle-outline" slot="start"></ion-icon>
+          <p style="font-family: 'Nunito Sans', sans-serif;">BiciRutas</p>
+        </ion-item>
+        
+        <ion-item color="success" (click)="goToEstadisticas()">
+          <ion-icon name="stats-chart-outline" slot="start"></ion-icon>
+          <p style="font-family: 'Nunito Sans', sans-serif;">Estadisticas</p>
+        </ion-item>
+
+        <ion-item color="success" (click)="logout()">
+          <ion-icon name="log-out-outline" slot="start"></ion-icon>
+          <p style="font-family: 'Nunito Sans', sans-serif;">Cerrar Sesión</p>
+          </ion-item>
+      </ion-list>        
+    </ion-content>
+
+  </ion-menu>
+  <ion-router-outlet id="content" main></ion-router-outlet>
+</ion-split-pane>
+
+
+

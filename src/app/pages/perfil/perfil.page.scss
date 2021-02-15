@@ -1,0 +1,98 @@
+ion-content{
+    --background: url("../../../assets/images/background-vertical.png") 0 0/100% 100% no-repeat;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .container{
+    display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-columns: 5% 80% 5%;
+      grid-template-rows: 10% 70% 10%;
+      height: 98%;
+      width: 100%;
+  }
+  
+  .item:nth-of-type(5){
+    border-radius: 20px;
+    -webkit-box-shadow: 9px 11px 13px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 11px 13px 3px rgba(0,0,0,0.75);
+    box-shadow: 9px 11px 13px 3px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-rows: 40% 40%;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    
+  }
+  
+  .item > .item:nth-of-type(1){
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url("../../../assets/images/background.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100% 60%;
+    display: flex;
+    justify-content: center;  
+  }
+  
+  .item > .item:nth-of-type(2){
+    border-bottom-left-radius: 20px;    
+    border-bottom-right-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    
+    
+  }
+  
+  img{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: auto;
+    display: block;
+    border: solid 7px white;
+    transform: rotate(90deg);
+  }
+  
+  @media screen and (max-width: 2000px){
+      
+    .container{
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-columns: 50px 300px 50px;
+      grid-template-rows: 100px 400px 100px;
+      height: 100vh;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+    
+    .item:nth-of-type(5){
+      border-radius: 20px;
+      -webkit-box-shadow: 9px 11px 13px 3px rgba(0,0,0,0.75);
+      -moz-box-shadow: 9px 11px 13px 3px rgba(0,0,0,0.75);
+      box-shadow: 9px 11px 13px 3px rgba(0,0,0,0.75);
+      display: grid;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 100%;
+      justify-content: center;
+      align-content: center;
+      background-color: white;
+      
+    }
+    
+    
+  
+  }
+  
+  
+  
+  
+  
